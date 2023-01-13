@@ -14,14 +14,15 @@ void FinalTask1 ()
             j++;
         }
     }
+    PrintArrayByString(arrayTemp);
     if (j < arrayInput.Length)
     {
-       string [] arrayOutput = new string [j + 1]; 
-       for (int k = 0; k <= j; k++)
-       {
-            arrayOutput [k] = arrayTemp [j];
-       }
-       PrintArrayByString(arrayOutput);
+        string [] arrayOutput = new string [j];
+        for (int k = 0; k < arrayOutput.Length; k++)
+        {
+            arrayOutput [k] = arrayTemp [k];
+        }
+        PrintArrayByString(arrayOutput);
     }
 }
 
