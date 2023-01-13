@@ -4,8 +4,16 @@ void FinalTask1 ()
 {
     string [] arrayInput ={"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
     PrintArrayByString(arrayInput);
-
-
+    string [] arrayTemp = new string [arrayInput.Length];
+    int j = 0;
+    for (int i = 0; i < arrayInput.Length; i++)
+    {
+        if (arrayInput [i].Length <= 3)
+        {
+            arrayTemp [j] = arrayInput [i];
+            j++;
+        }
+    }
 }
 
 
