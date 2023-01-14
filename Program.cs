@@ -2,7 +2,9 @@
 
 void FinalTask1 ()
 {
+    Console.Clear();
     string [] arrayInput ={"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+    Console.WriteLine("Выводим первоначальный массив, заданный на статрте:");
     PrintArrayByString(arrayInput);
     string [] arrayTemp = new string [arrayInput.Length];
     int j = 0;
@@ -14,6 +16,7 @@ void FinalTask1 ()
             j++;
         }
     }
+    Console.WriteLine("Промежуточный массив с пустыми элементами:");
     PrintArrayByString(arrayTemp);
     if (j < arrayInput.Length)
     {
@@ -22,6 +25,7 @@ void FinalTask1 ()
         {
             arrayOutput [k] = arrayTemp [k];
         }
+        Console.WriteLine("Итоговый массив без пустых элементов:");
         PrintArrayByString(arrayOutput);
     }
 }
